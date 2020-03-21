@@ -1,0 +1,249 @@
+[
+  {
+    "pagelabel": "Page 1",
+    "pageNo": 1,
+    "widgetData": [
+      {
+        "show_question": true,
+        "key": "name",
+        "label": "Enter your Name",
+        "order": 1,
+        "display_type": "edit_text",
+        "is_required": true,
+        "id": 46,
+        "properties": {
+          "inputType": "text"
+        },
+        "options": [],
+        "answer": ""
+      },
+      {
+        "show_question": true,
+        "key": "age",
+        "label": "Enter your Age",
+        "order": 3,
+        "display_type": "edit_text",
+        "is_required": true,
+        "id": 35,
+        "properties": {
+          "inputType": "number"
+        },
+        "options": [],
+        "answer": ""
+      },
+      {
+        "show_question": true,
+        "key": "Selected Hobbies",
+        "label": "Select your hobbies",
+        "order": 2,
+        "display_type": "check_box",
+        "is_required": true,
+        "id": 47,
+        "properties": {},
+        "options": [
+          {
+            "display_name": "Dancing",
+            "isSelected": false,
+            "value": "male",
+            "id": 83,
+            "order": 0
+          },
+          {
+            "display_name": "Painting",
+            "isSelected": false,
+            "value": "female",
+            "id": 84,
+            "order": 1
+          },
+          {
+            "display_name": "Singing",
+            "isSelected": false,
+            "value": "other",
+            "id": 85,
+            "order": 2
+          }
+        ],
+        "answer": ""
+      },
+      {
+        "show_question": true,
+        "key": "gender",
+        "label": "Select gender",
+        "order": 2,
+        "display_type": "dropdown",
+        "is_required": true,
+        "id": 27,
+        "properties": {
+          "inputType": ""
+        },
+        "dropDownList": ["gender", "male", "female", "other"],
+        "options": [],
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "pagelabel": "Page 2",
+    "pageNo": 2,
+    "widgetData": [
+      {
+        "show_question": true,
+        "key": "designation",
+        "label": "Enter your Designation",
+        "order": 1,
+        "display_type": "edit_text",
+        "is_required": true,
+        "id": 48,
+        "properties": {
+          "inputType": "text"
+        },
+        "options": [],
+        "answer": ""
+      },
+      {
+        "show_question": true,
+        "key": "Selected location",
+        "label": "Select preferred work location",
+        "order": 2,
+        "display_type": "check_box",
+        "is_required": true,
+        "id": 49,
+        "properties": {},
+        "options": [
+          {
+            "display_name": "Chennai",
+            "isSelected": false,
+            "value": "male",
+            "id": 93,
+            "order": 0
+          },
+          {
+            "display_name": "Singapore",
+            "isSelected": false,
+            "value": "female",
+            "id": 94,
+            "order": 1
+          },
+          {
+            "display_name": "Malaysia",
+            "isSelected": false,
+            "value": "other",
+            "id": 95,
+            "order": 2
+          }
+        ],
+        "answer": ""
+      },
+      {
+        "show_question": true,
+        "key": "work status",
+        "label": "Work Status",
+        "order": 2,
+        "display_type": "radio_group",
+        "is_required": true,
+        "id": 51,
+        "properties": {},
+        "options": [
+          {
+            "display_name": "Fresher",
+            "isSelected": false,
+            "value": "male",
+            "id": 73,
+            "order": 0
+          },
+          {
+            "display_name": "Experience",
+            "isSelected": false,
+            "value": "female",
+            "id": 74,
+            "order": 1
+          },
+          {
+            "display_name": "Team Lead",
+            "isSelected": false,
+            "value": "other",
+            "id": 75,
+            "order": 2
+          }
+        ],
+        "answer": ""
+      },
+      {
+        "show_question": true,
+        "key": "currency",
+        "label": "Currency",
+        "order": 2,
+        "display_type": "radio_group",
+        "is_required": true,
+        "id": 59,
+        "properties": {},
+        "options": [
+          {
+            "display_name": "Dollar",
+            "isSelected": false,
+            "value": "male",
+            "id": 37,
+            "order": 0
+          },
+          {
+            "display_name": "Rupees",
+            "isSelected": false,
+            "value": "female",
+            "id": 47,
+            "order": 1
+          }
+        ],
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "pagelabel": "Page 3",
+    "pageNo": 3,
+    "widgetData": [
+      {
+        "show_question": true,
+        "key": "experience",
+        "label": "Work Experience",
+        "order": 2,
+        "display_type": "dropdown",
+        "is_required": true,
+        "id": 77,
+        "properties": {
+          "inputType": ""
+        },
+        "dropDownList": ["Years", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        "options": [ ],
+        "answer": ""
+      },
+      {
+        "show_question": true,
+        "key": "email",
+        "label": "Enter your Email",
+        "order": 1,
+        "display_type": "edit_text",
+        "is_required": true,
+        "id": 50,
+        "properties": {
+          "inputType": "email"
+        },
+        "options": [],
+        "answer": ""
+      },
+      {
+        "show_question": true,
+        "key": "mobile",
+        "label": "Enter your Mobile No",
+        "order": 1,
+        "display_type": "edit_text",
+        "is_required": true,
+        "id": 48,
+        "properties": {
+          "inputType": "phone"
+        },
+        "options": [],
+        "answer": ""
+      }
+    ]
+  }
+]
