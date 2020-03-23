@@ -10,7 +10,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private var currentPage = 0
     private val fm = supportFragmentManager
     private lateinit var pageList: List<FormPage>
 
@@ -31,29 +30,27 @@ class MainActivity : AppCompatActivity() {
 
     private fun setListeners() {
         buttonNext.setOnClickListener {
-            if (++currentPage == 2)
+            if (fm.backStackEntryCount == pageList.size - 1)
                 buttonNext.text = "Submit"
-            doFragmentTransaction()
+            if (fm.backStackEntryCount <= pageList.size - 1)
+                doFragmentTransaction()
         }
 
         buttonPrevious.setOnClickListener {
-            currentPage--
+            buttonNext.text = "Next"
             onBackPressed()
         }
     }
 
     private fun doFragmentTransaction() {
-        fm.beginTransaction().replace(
+        fm.beginTransaction().add(
             R.id.fragment_container,
-            FormFragment.newInstance(pageList.get(currentPage))
+            FormFragment.newInstance(pageList.get(fm.backStackEntryCount))
         ).addToBackStack(null).commit()
     }
 
     override fun onBackPressed() {
-        if (fm.backStackEntryCount > 1) {
+        if (fm.backStackEntryCount > 1)
             fm.popBackStack()
-        } else {
-            finish()
-        }
     }
 }

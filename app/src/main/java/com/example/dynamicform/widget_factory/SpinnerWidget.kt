@@ -2,7 +2,6 @@ package com.example.dynamicform.widget_factory
 
 import android.R
 import android.content.Context
-import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.LinearLayout
@@ -18,6 +17,7 @@ class SpinnerWidget(val ctxt: Context, val data: WidgetData, val listener: ViewL
         createLabel()
 
         // Create Spinner
+        // Here, we don't need to return anything, so instead of using "apply block", we can use "with block" here, to construct the object.
         with(spinner) {
             layoutParams = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
             val arrayAdapter = ArrayAdapter(context, R.layout.simple_spinner_item, widgetData.dropDownList)

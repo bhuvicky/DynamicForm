@@ -5,10 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
-import androidx.fragment.app.Fragment
-import com.example.dynamicform.data.FormPage
 import com.example.dynamicform.R
 import com.example.dynamicform.base.BaseFormFragment
+import com.example.dynamicform.data.FormPage
 import com.example.dynamicform.widget_factory.WidgetFactory
 
 class FormFragment: BaseFormFragment() {
@@ -37,11 +36,5 @@ class FormFragment: BaseFormFragment() {
 
         // IllegalStateException: The specified child already has a parent. You must call removeView() on the child's parent first.
         viewList.forEach { rootView.addView(it) }
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        viewList.clear()
-        rootView.removeAllViews()
     }
 }
